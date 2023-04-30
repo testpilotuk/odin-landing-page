@@ -11,7 +11,7 @@
     --button-blue: #3882F6;
     --hero-heading: 900 4.8rem Roboto, sans-serif;
     --para-text: 1.6rem Roboto, sans-serif;
-    --hero-subtext: 1.8rem Roboto, sans-serif;
+    --hero-subtext: 1.8rem/1.5 Roboto, sans-serif;
     --logo-text: 2.4rem Roboto, sans-serif;
     --services-header: 900 3.6rem Roboto, sans-serif;
     --blockquote-text: 100 italic 3.6rem Roboto, sans-serif;
@@ -20,13 +20,15 @@
 
 html {
     font-size: 62.5%;
+    background-color: black;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: var(--site-dark);
     color: var(--site-white);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
@@ -35,10 +37,12 @@ section {
 
 h1 {
     font: var(--hero-heading);
+    margin-bottom: 0;
 }
 
 h2 {
     font: var(--services-header);
+    text-align: center;
 }
 
 h3 {
@@ -47,68 +51,185 @@ h3 {
 
 p {
     font: var(--para-text);
+    max-width: 45ch;
 }
-nav > ul {
+
+nav>ul {
     list-style: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+}
+
+footer > p {
+    display: inline-block;
 }
 .flex {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
 }
+
 /* -- NAVIGATION -- */
-.navigation-container {
+.navigation-wrapper {
     width: 100%;
-    max-width: 100vw;
+    max-width: 1200px;
     position: fixed;
     top: 0;
     height: 110px;
-    padding: 1em;
     z-index: 999;
+    background-color: var(--site-dark);
 }
+
+.navigation-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo-img {
+    width: 75px;
+    height: auto;
+}
+
 .nav-link {
     font: var(--hero-subtext);
     text-decoration: none;
     color: var(--site-white);
     text-transform: uppercase;
 }
+
 .nav-link:hover {
     background-color: var(--site-white);
     color: var(--site-dark);
 }
+
 .main-section {
     position: relative;
     margin-top: 110px;
-    max-width: 100vw;
 }
+
 /* -- HERO SECTION -- */
 .hero-section {
     min-height: 60vh;
+    z-index: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 1 450px;
 }
+
+.hero-left-column {
+    flex-direction: column;
+    flex: 0 1 400px;
+}
+
 .hero-text {
     font: var(--hero-subtext);
     color: var(--white-subtext);
 }
+
 .cta-button {
     border-radius: 10px;
     border: 0;
-    width: 100px;
-    height: 35px;
+    width: 125px;
+    height: 40px;
     cursor: pointer;
     font: 700 1.8rem Roboto, sans-serif;
     color: var(--site-white);
     padding: 0.4em;
 }
+
+.cta-button:hover {
+    background-color: var(--site-dark);
+    border: 2px solid var(--button-blue);
+    color: var(--button-blue);
+}
+
 .filled {
     background-color: var(--button-blue);
 }
+
+.hero-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* -- SERVICES SECTION -- */
+.cards-container {
+    justify-content: space-around;
+    margin: 10em auto;
+}
+
+.card {
+    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    max-width: 100%;
+    width: 100px;
+}
+
+.icons-provided-by {
+    text-align: center;
+}
+
 .contact-section,
 .services-section {
     background-color: var(--site-white);
     color: var(--site-dark);
 }
+
+/* -- TESTIMONIAL SECTION -- */
 .testimonials-section {
     background-color: var(--site-grey);
     color: var(--site-dark);
 }
 
+.testimonial-quote {
+    margin: 10em auto;
+    max-width: 70%;
+}
+
+.quote-text {
+    font: var(--blockquote-text);
+}
+
+.credit-author {
+    text-align: end;
+    font: var(--cta-header);
+}
+
+/* -- CONTACT SECTION -- */
+.contact-container {
+    background-color: var(--button-blue);
+    color: var(--site-white);
+    margin: 10em auto;
+    max-width: 80%;
+    padding: 2em;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-left-column {
+    flex-direction: column;
+    gap: 0;
+}
+
+.no-fill {
+    background-color: var(--button-blue);
+    color: var(--site-white);
+    width: 125px;
+    height: 40px;
+    border: 2px solid var(--site-white);
+}
+
+.cta-heading {
+    margin-bottom: -15px;
+}

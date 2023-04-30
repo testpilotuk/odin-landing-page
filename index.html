@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <header class="navigation-container flex">
-        <div>
+    <header class="navigation-wrapper">
+        <div class="navigation-container flex">
             <div>
-                <img src="#" alt="Fake Financial Logo">
+                <img src="images/fake-finance.png" alt="Fake Financial Logo" class="logo-img">
             </div>
             <nav>
                 <ul class="nav-list flex">
@@ -29,51 +29,60 @@
         </div>
     </header>
     <main class="main-section">
-        <section id="hero-section" class="hero-section">
-            <div>
-                <h1>This Website Is Awesome</h1>
-                <p class="hero-text">This website has some subtext that goes here under the main title. It's a smaller font and the color
-                    is
-                    lower contrast.</p>
+        <section id="hero-section" class="hero-section flex">
+            <div class="hero-left-column flex">
+                <h1>Fake Financial Services</h1>
+                <p class="hero-text">We take care of your finances as if they were our own. We are experts at keeping
+                    your money safe and secure.
+                </p>
                 <input type="button" value="Sign up" class="cta-button filled">
             </div>
-            <div>
-                <img class="hero-img" src="#" alt="Photo of Fake Financial documents" width="600px" height="600px">
+            <div class="hero-right-column">
+                <img src="images/financial-3207895_640.jpg" alt="Photo of a man holding a financial chart"
+                    class="hero-img">
             </div>
         </section>
         <section id="services-section" class="services-section">
-            <h2>Some random information</h2>
+            <h2>We Provide Quality Services</h2>
             <div class="cards-container flex">
-                <div class="card">
-                    <img src="#" alt="Financial image 1">
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="card flex">
+                    <img src="images/001-bank.png" alt="A picture of a bank" class="card-img">
+                    <p>Your money is safe with us and we provide great interest rates.</p>
                 </div>
-                <div class="card">
-                    <img src="#" alt="Financial image 2">
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="card flex">
+                    <img src="images/002-financial-advisor.png" alt="A picture of a financial advisor" class="card-img">
+                    <p>Our in house financial advisors are second to none.</p>
                 </div>
-                <div class="card">
-                    <img src="#" alt="Financial image 3">
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="card flex">
+                    <img src="images/003-service.png" alt="A picture of a staff member" class="card-img">
+                    <p>We offer an amazing range of investment services.</p>
                 </div>
-                <div class="card">
-                    <img src="#" alt="Financial image 4">
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="card flex">
+                    <img src="images/004-customer-support.png" alt="A picture of customer support" class="card-img">
+                    <p>We are always available to help with 24hr customer service.</p>
                 </div>
             </div>
+            <div class="icons-provided-by">Icons made by <a href="https://www.flaticon.com/authors/eucalyp"
+                    title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a></div>
         </section>
         <section id="testimonials-section" class="testimonials-section">
             <figure class="testimonial-quote">
-                <blockquote class="quote-text">This is an inspiring quote, or testimonial from a customer.
-                    Maybe it's just filling up space, or maybe people will actually read it.
-                    Who knows? All I know is that it looks nice.</blockquote>
-                <figcaption><strong>&mdash; Thor, God of Thunder</strong></figcaption>
+                <blockquote class="quote-text">I trusted my finances to Fake Finance Services and they repaid that trust
+                    many times over. I am now far richer than I ever was before.</blockquote>
+                <figcaption class="credit-author"><strong>&mdash; Bill, A Real Person</strong></figcaption>
             </figure>
         </section>
         <section id="contact-section" class="contact-section">
-            <h3 class="cta-heading">Call to action! It's time!</h3>
-            <p class="cta-text">Sign up for our product by clicking that button right over there!</p>
-            <input type="button" value="Sign up" class="cta-button no-fill">
+            <div class="contact-container flex">
+                <div class="contact-left-column flex">
+                    <h3 class="cta-heading">Take advantage of our amazing free offer!</h3>
+                    <p class="cta-text">Sign up for our free quarterly financial email!</p>
+                </div>
+                <div class="contact-right-column">
+                    <input type="button" value="Sign up" class="cta-button no-fill">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
