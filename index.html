@@ -5,34 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Fake Financial Landing Page</title>
 </head>
 
 <body>
-    <header>
+    <header class="navigation-container flex">
         <div>
-            <div>Logo goes here</div>
+            <div>
+                <img src="#" alt="Fake Financial Logo">
+            </div>
             <nav>
-                <ul>
-                    <li>Products</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                <ul class="nav-list flex">
+                    <li><a class="nav-link" href="#hero-section">Home</a></li>
+                    <li><a class="nav-link" href="#services-section">Services</a></li>
+                    <li><a class="nav-link" href="#testimonials-section">Testimonials</a></li>
+                    <li><a class="nav-link" href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <section id="hero-section">
+    <main class="main-section">
+        <section id="hero-section" class="hero-section">
             <div>
                 <h1>This Website Is Awesome</h1>
-                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color
+                <p class="hero-text">This website has some subtext that goes here under the main title. It's a smaller font and the color
                     is
                     lower contrast.</p>
-                <input type="button" value="Sign up">
+                <input type="button" value="Sign up" class="cta-button filled">
             </div>
-            <div>Image goes here</div>
+            <div>
+                <img class="hero-img" src="#" alt="Photo of Fake Financial documents" width="600px" height="600px">
+            </div>
+        </section>
+        <section id="services-section" class="services-section">
+            <h2>Some random information</h2>
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="#" alt="Financial image 1">
+                    <p>This is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <img src="#" alt="Financial image 2">
+                    <p>This is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <img src="#" alt="Financial image 3">
+                    <p>This is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <img src="#" alt="Financial image 4">
+                    <p>This is some subtext under an illustration or image</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials-section" class="testimonials-section">
+            <figure class="testimonial-quote">
+                <blockquote class="quote-text">This is an inspiring quote, or testimonial from a customer.
+                    Maybe it's just filling up space, or maybe people will actually read it.
+                    Who knows? All I know is that it looks nice.</blockquote>
+                <figcaption><strong>&mdash; Thor, God of Thunder</strong></figcaption>
+            </figure>
+        </section>
+        <section id="contact-section" class="contact-section">
+            <h3 class="cta-heading">Call to action! It's time!</h3>
+            <p class="cta-text">Sign up for our product by clicking that button right over there!</p>
+            <input type="button" value="Sign up" class="cta-button no-fill">
         </section>
     </main>
+    <footer>
+        <p>Copyright © Chris Sutcliffe 2023</p>
+    </footer>
 </body>
 
 </html>
